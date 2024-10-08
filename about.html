@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EditKaro</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #aa70c3;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        /* Section styles */
+        section {
+            padding: 3rem 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+
+        /* Projects section */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .video-item {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        /* Services section */
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .service-item {
+            background-color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        /* Team section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        /* Work process section */
+        .process-list {
+            list-style-type: none;
+        }
+
+        .process-list li {
+            margin-bottom: 1rem;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .process-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2c3e50;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .video-grid,
+            .services-list,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EditKaro - Your Video Editing Experts</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p> Editkaro.in is a social media marketing and 
+                    videos editing agency . You will showcase 
+                    their work, which includes categories like 
+                    short form videos, long term videos, gaming 
+                    videos, football videos, eCommerce ads, 
+                    documentary style, colour grading, anime 
+                    videos, and ads
+                    </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Our Projects</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <iframe src="video/video1.mp4" frameborder="0" allowfullscreen></iframe>
+                        <h3> Project 1</h3>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="video/video2.mp4" frameborder="0" allowfullscreen></iframe>
+                        <h3>Project 2</h3>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="video/video3.mp4" frameborder="0" allowfullscreen></iframe>
+                        <h3> Project 3</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-list">
+                    <div class="service-item">
+                        <h3>Video Editing</h3>
+                        <p>Professional editing to enhance your raw footage.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Color Grading</h3>
+                        <p>Enhance the visual appeal of your videos with expert color grading.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Motion Graphics</h3>
+                        <p>Add dynamic elements to your videos with custom motion graphics.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Sound Design</h3>
+                        <p>Improve your video's audio with professional sound design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="img/user1.svg" alt="Team Member 1">
+                        <h3>John Doe</h3>
+                        <p>Lead Editor</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/user2.png" alt="Team Member 2">
+                        <h3>Jane Smith</h3>
+                        <p>Motion Graphics Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/user3.jpeg" alt="Team Member 3">
+                        <h3>Mike Johnson</h3>
+                        <p>Color Grading Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="container">
+                <h2>Our Work Process</h2>
+                <ul class="process-list">
+                    <li>Initial consultation to understand your vision and requirements</li>
+                    <li>Storyboarding and planning the edit</li>
+                    <li>First cut delivery for client review</li>
+                    <li>Revisions and refinements based on feedback</li>
+                    <li>Final cut delivery with color grading and sound design</li>
+                    <li>Quality assurance and final client approval</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
